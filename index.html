@@ -39,10 +39,23 @@
 <h3>
 <a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Rein?</h3>
 
-<p>For millenia, people have been working with and for each other, for their communities, for personal fulfillment, and to survive.</p>
+<p>For millenia, people have been working together, for their communities and for themselves, out of inspiration and out of need.</p>
 
-<p>Unfortunately there are many obstacles to earning a living, or building something great, or applying talent where it is needed most. Rein is an attempt to route around those obstacles by removing unnecessary third parties from the provision of labor.</p>
+<p>Unfortunately there are many obstacles to earning a living, building something great, or applying talent where it is needed most. Bitcoin is just beginning to show us what reduced friction and censorship-resistances mean for money. Rein is an experiment in applying the same ideas to work and teams.</p>
 
+<<<<<<< HEAD
+<p>As with Bitcoin, incentives in Rein are key to success. For job creators and workers, incentives are clear and multisig escrow is straightforward. For mediators, a new multisig escrow type is introduced to guarantee that funds intended for mediators do not go elsewhere. For data persistence, we are choosing a hosting model and have made a server available to define a minimal, yet tailored feature set. As for privacy, transport (HTTP) is compatible with Tor and since ECDSA is used natively, Multiparty encryption can be added with no additional setup.</p>
+
+<h3><a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h3>
+
+<p><b>Innovation @ the edges</b> - Rather than spawn a new p2p network, Rein is modeled after the Internet. Myriad parties operate their portion of the network out of self-interest and compete on price and quality. Foundational server logic is kept as simple as possible, leaving the vast majority of the brains in the client. The most complicated work servers will do is in accepting payment, staying online, and returning results to a handful of different query types. This principle, it is hoped, will enable Rein to support many different order flows, transaction types, and services.</p>
+
+<p><b>Trustless Trade</b> - Payments are stored in 2-of-3 and mandatory 2-of-3 multisig addresses. Signatures are used to establish accountability and provide a foundation for ratings and reputation. </p>
+
+<p><b>Psuedonymity</b> - Rein does not require proof of identity outside the crypto. You can create one or as many identities as you'd like, however, tools will inevitably be built around reputation. It is common sense that those with established, positive track records will enjoy the most favorable work and workers.</p>
+
+<p><b>For developers</b> - We have a great glossary. Decentralized. ECDSA auth. Microhosting. Multisig escrow. If you're still reading, you understand how much we need to build and can probably help. <a href="https://github.com/ReinProject/python-rein/issues">Let's</a> <a href="https://github.com/ReinProject">do</a> <a href="bitcoin:A multisig address generated in Rein">this.</a></p>
+=======
 <p>With Rein, we are working to help you turn your time into honest money and vice-versa. This is accomplished through multisignature Bitcoin escrow, signed contracts, and a paid network of servesr. We need identities in the system to be able to estimate trust but since we are defining a protocol with our software, there can never be a requirement to link your Rein identity with any other. The plan is for Rein to be fully compatible with Tor and other privacy-enhancing technologies.</p>
 
 <h3><a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h3>
@@ -56,6 +69,7 @@
 <p><b>Necessary data is public</b> - Each stage of a job is manifest as a signed document. The job creator signs the job he posts. A worker signs their bid. A mediator signs the resolution of a dispute. These documents are uploaded to one or more servers and payment for hosting these small files is encouraged. Though all signed documents will be public, they can be encrypted taking into account the needs of mediators to resolve disputes.</p>
 
 <p><b>Developer Focus</b> - At this early stage, we're working on command line tools - no fancy clients or CMS-plugins - just nailing down how jobs get done trustlessly via the CLI. Our first implementation is with a server and client written in Python using python-bitcoinlib and Flask.</p>
+>>>>>>> 44f3aa20938683b87cc78e68b9253c5eb50eacf4
 
 <h3>
 <a id="applications" class="anchor" href="#applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications:</h3>
