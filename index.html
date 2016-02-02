@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>ReinProject.org by ReinProject</title>
+    <title>Rein</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
@@ -15,13 +15,13 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>ReinProject.org</h1>
+        <h1>Rein</h1>
         <p>Decentralized professional services market</p>
 
         
         <p class="view"><b>Get Started</b><br />
-        <a href="https://github.com/ReinProject/python-rein"><button style="margin: 10px;">Download Rein Client</button></a><br />
-        <a href="https://github.com/ReinProject/causeway"><button style="margin:10px;">Download Rein Server</button></a></p>
+        <a href="https://github.com/ReinProject/python-rein"><button style="margin: 10px;">Download Client v0.1.0-alpha</button></a><br />
+        <a href="https://github.com/ReinProject/causeway"><button style="margin:10px;">Download Server v0.1.0-alpha</button></a></p>
 
         <p class="view"><b>Standalone web-apps</b><br />
         <a href="/bitcoin-signature-tool">Bitcoin Signature Tool</a><br />
@@ -31,39 +31,27 @@
 
       </header>
       <section>
-        <h3>
-<a id="the-mission" class="anchor" href="#the-mission" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mission</h3>
 
-<p>Provide a decentralized platform for professional services.</p>
-
+<h2>Freelancing for bitcoin like never before.</h2>
+      
 <h3>
-<a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why Rein?</h3>
-
-<p>For millenia, people have been working together, for their communities and for themselves, out of inspiration and out of need.</p>
-
-<p>Unfortunately there are many obstacles to earning a living, building something great, or applying talent where it is needed most. Bitcoin is just beginning to show us what reduced friction and censorship-resistances mean for money. Rein is an experiment in applying the same ideas to work and teams.</p>
-
-<p>As with Bitcoin, incentives in Rein are key to success. For job creators and workers, incentives are clear and multisig escrow is straightforward. For mediators, a new multisig escrow type is introduced to guarantee that funds intended for mediators do not go elsewhere. For data persistence, we are choosing a hosting model and have made a server available to define a minimal, yet tailored feature set. As for privacy, transport (HTTP) is compatible with Tor and since ECDSA is used natively, Multiparty encryption can be added with no additional setup.</p>
+<a id="why-rein" class="anchor" href="#why-rein" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+    <ul>
+        <li>Multisig escrows keep funds safe for mediators, clients, and freelancers.</li>
+        <li>Master-delegate ECDSA scheme provides security and convenience.
+        <li>A decentralized microhosting network connects freelancers with clients.</li>
+    </ul>
 
 <h3><a id="design-principles" class="anchor" href="#design-principles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Design Principles</h3>
 
-<p><b>Innovation @ the edges</b> - Rather than spawn a new p2p network, Rein is modeled after the Internet. Myriad parties operate their portion of the network out of self-interest and compete on price and quality. Foundational server logic is kept as simple as possible, leaving the vast majority of the brains in the client. The most complicated work servers will do is in accepting payment, staying online, and returning results to a handful of different query types. This principle, it is hoped, will enable Rein to support many different order flows, transaction types, and services.</p>
+<p><b>Innovation @ the edges</b> - Rather than spawn a new p2p network, Rein is modeled after the internet. Microhosting servers operate out of self-interest while competing on price and quality. Server logic is minimized, leaving most of it in the client. This principle will enable Rein to support many different order flows, transaction types, and services.</p>
 
-<p><b>Trustless Trade</b> - Payments are stored in 2-of-3 and mandatory 2-of-3 multisig addresses. Signatures are used to establish accountability and provide a foundation for ratings and reputation. </p>
+<p><b>Trustless Trade</b> - Payments are stored in 2-of-3 and mandatory multisig addresses. Signatures provide accountability and a foundation for ratings and reputation. </p>
 
-<p><b>Psuedonymity</b> - Rein does not require proof of identity outside the crypto. You can create one or as many identities as you'd like, however, tools will inevitably be built around reputation. It is common sense that those with established, positive track records will enjoy the most favorable work and workers.</p>
+<p><b>Psuedonymity</b> - Rein does not require proof of identity outside the crypto. You can create one or as many identities as you'd like, however, tools will inevitably be built around reputation common sense states that those with established, positive track records will enjoy the most favorable work and output.</p>
 
-<p><b>For developers</b> - We have a great glossary. Decentralized. ECDSA auth. Microhosting. Multisig escrow. If you're still reading, you understand how much we need to build and can probably help. <a href="https://github.com/ReinProject/python-rein/issues">Let's</a> <a href="https://github.com/ReinProject">do</a> <a href="bitcoin:A multisig address generated in Rein">this.</a></p>
+<p><b>For developers</b> - Decentralization. ECDSA auth. Microhosting. Multisig escrow. If you're still reading, you can definitely help. <a href="https://github.com/ReinProject/python-rein/issues">Let's</a> <a href="https://github.com/ReinProject/causeway/issues">do</a> <a href="bitcoin:A multisig address generated in Rein">this.</a></p>
 
-<h3>
-<a id="applications" class="anchor" href="#applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications:</h3>
-
-<ul>
-<li>A decentralized labor market that combines judgement and  accountability through cryptographic signatures.</li>
-<li>Currency hedging, volatility protection - As long as enough funds are locked up to fulfill the value of the job, signers can easily return excess funds to a job's creator. For example, let’s say a job fee is set at $5k split between a front end dev and back end admin. Guarding against a 20% currency move means putting $6k in Bitcoin in escrow. If the value of escrowed funds drops, the workers would be right to demand more funds be placed in escrow to continue work. No action is required if the opposite happens.</li>
-<li>Milestones - Escrowed funds could be paid out in multiple payments based on reaching milestones in the project. The people in the project have to work together to send the payments and are accountable since their actions are recorded cryptographically.</li>
-<li>Subcontracting. Funds could be broken out and used to create and fund other jobs with completely different mediator/worker/milestone combinations.</li>
-</ul>
       </section>
       <footer>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
