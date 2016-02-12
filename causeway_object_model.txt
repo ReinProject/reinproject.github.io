@@ -1,0 +1,33 @@
+                       causeway
+
+ owner                                   log
+    address VARCHAR(64) <------+-+          created TEXT
+    nonce VARCHAR(32)          | |          ip VARCHAR(45)
+    balance INTEGER            | |          action VARCHAR(10)
+    bad_attempts INTEGER       | |          bytes INTEGER
+                               | |          owner VARCHAR(64)
+                               | |          message TEXT
+                               | |
+ sale                          | |
+    id integer <-----------+   | |
+    owner VARCHAR(64) +--------+ |       wallet
+    created TEST           |     |          address VARCHAR(64)
+    amount INTEGER         |     |          contact VARCHAR(256)
+    term INTEGER           |     |          owner VARCHAR(64)
+    contact VARCHAR(255)   |     |
+    price INTEGER          |     |
+    bytes_used INTEGER     |     |
+                           |     |
+                           |     |
+                           |     |
+"kv"                       |     |
+   key VARCHAR(64)         |     |
+   value BLOB              |     |
+   owner VARCHAR(64) +-----------+
+   testnet BOOLEAN         |
+   sale INTEGER  +---------+
+
+Last updated: 2016-02-12
+
+
+

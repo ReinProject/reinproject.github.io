@@ -1,0 +1,42 @@
+                                                                         +
+                    python-rein                                          |                              causeway
+                                                                         |
+                                   +---------------------------------+   |
+                                   |     bucket                      |   |        owner                                   log
+         identity                  |        id INTEGER               +-------------+ address VARCHAR(64) <------+-+          created TEXT
+    +-----> id INTEGER <--------------------identity INTEGER             |           nonce VARCHAR(32)          | |          ip VARCHAR(45)
+    |       name VARCHAR(250)      |        remote_id VARCHAR(250) <----------+      balance INTEGER            | |          action VARCHAR(10)
+    |       contact VARCHAR(250)   |        date_created DATETIME        |    |      bad_attempts INTEGER       | |          bytes INTEGER
++---------> maddr VARCHAR(64) <----+        url VARCHAR(250) <-----+     |    |                                 | |          owner VARCHAR(64)
+|   |       daddr VARCHAR(64)               bytes_free INTEGER     |     |    |                                 | |          message TEXT
+|   |       dkey VARCHAR(64)                expires DATETIME       |     |    |                                 | |
+|   |       will_mediate BOOLEAN                                   |     |    |   sale                          | |
+|   |       mediator_fee FLOAT                                     |     |    +----+ id integer <-----------+   | |
+|   |       enrolled BOOLEAN                                       |     |           owner VARCHAR(64) +--------+ |       wallet
+|   |                                                              |     |           created TEST           |     |          address VARCHAR(64)
+|   |                                    placement                 |     |           amount INTEGER         |     |          contact VARCHAR(256)
+|   |    document                           id INTEGER             |     |           term INTEGER           |     |          owner VARCHAR(64)
+|   |       id INTEGER <--------------------doc_id INTEGER         |     |           contact VARCHAR(255)   |     |
+|   +------ identity INTEGER                url VARCHAR(250) ------+     |           price INTEGER          |     |
+|           doc_type VARCHAR(64)            remote_key VARCHAR(64) <----------+      bytes_used INTEGER     |     |
+|           doc_hash VARCHAR(250)           verified INTEGER             |    |                             |     |
+|           contents VARCHAR(8192)                                       |    |                             |     |
+|           source_url VARCHAR(250)                                      |    |                             |     |
+|           source_key VARCHAR(64)                                       |    |  "kv"                       |     |
+|           sig_verified INTEGER                                         |    +---+ key VARCHAR(64)         |     |
+|   +------ order_id INTEGER             config                          |          value BLOB              |     |
+|   |       testnet BOOLEAN                 id INTEGER                   |          owner VARCHAR(64) +-----------+
+|   |                                       "key" VARCHAR(255)           |          testnet BOOLEAN         |
+|   |                                       value VARCHAR(255)           |          sale INTEGER  +---------+
+|   |    "order"                                                         |
+|   +-----> id INTEGER                                                   |
+|           job_id VARCHAR(32)                                           |
+|           posting_doc_id INTEGER                                       |
++---------+ job_creator_maddr VARCHAR(64)                                |
+            mediator_maddr VARCHAR(64)                                   |
+            worker_maddr VARCHAR(64)                                     |
+            job_creator INTEGER                                          |
+            open_for_bid BOOLEAN                                         |
+                                                                         |
+                                                                         |
+                                                                         +
